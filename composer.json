@@ -1,0 +1,21 @@
+{
+  "name": "feedbox-cz/xml-manipulate",
+  "description": "Operation with XML DOM object",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Filip Šedivý",
+      "email": "mail@filipsedivy.cz",
+      "homepage": "https://filipsedivy.cz"
+    }
+  ],
+  "require": {
+    "php": ">= 7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "FeedBox\\XmlManipulate\\": "src/"
+    }
+  }
+}
