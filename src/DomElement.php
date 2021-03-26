@@ -2,7 +2,6 @@
 
 namespace FeedBox\XmlManipulate;
 
-
 final class DomElement
 {
     private \DOMElement $element;
@@ -10,6 +9,11 @@ final class DomElement
     public function __construct(\DOMElement $element)
     {
         $this->element = $element;
+    }
+
+    public function countElementsByTagName(string $name): int
+    {
+        return $this->getElement()->getElementsByTagName($name)->length;
     }
 
     public function getElementByTagName(string $name, int $item = 0): ?DomElement
